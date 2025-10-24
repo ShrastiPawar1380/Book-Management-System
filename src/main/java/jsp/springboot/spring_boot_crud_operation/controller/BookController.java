@@ -11,6 +11,7 @@ import jsp.springboot.spring_boot_crud_operation.dto.ResponseStructure;
 import jsp.springboot.spring_boot_crud_operation.entity.Book;
 import jsp.springboot.spring_boot_crud_operation.service.BookService;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/book")
 public class BookController {

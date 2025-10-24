@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book CRUD | Spring Boot + HTML</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 Book Management System</h1>
+  </header>
+
+  <section class="form-section">
+    <h2>Add / Update Book</h2>
+    <form id="bookForm">
+      <input type="hidden" id="bookId" />
+
+      <div class="form-group">
+        <label>Title:</label>
+        <input type="text" id="title" required />
+      </div>
+
+      <div class="form-group">
+        <label>Author:</label>
+        <input type="text" id="author" required />
+      </div>
+
+      <div class="form-group">
+        <label>Price:</label>
+        <input type="number" id="price" step="0.01" required />
+      </div>
+
+      <div class="form-group">
+        <label>Published Year:</label>
+        <input type="number" id="publisedYear" required />
+      </div>
+
+      <div class="form-group">
+        <label>Genre:</label>
+        <input type="text" id="genre" required />
+      </div>
+
+      <div class="form-group checkbox">
+        <label>
+          <input type="checkbox" id="availablity" /> Available
+        </label>
+      </div>
+
+      <button type="submit">Save Book</button>
+    </form>
+  </section>
+
+  <section class="list-section">
+    <h2>All Books</h2>
+    <table id="bookTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Price</th>
+          <th>Year</th>
+          <th>Genre</th>
+          <th>Available</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Populated by JS -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
